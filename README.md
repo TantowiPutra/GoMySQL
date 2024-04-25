@@ -27,3 +27,8 @@ Method
 
 <!-- Execute SQL Query -->
 1. (DB) ExecContext(context, sql, param) -> RUn Query that doesn't return rows
+
+<!-- What is Database Pooling ? -->
+1. Database Pooling is pre-established database connection, in which the database connection is already declared before receiving request from a user
+2. Using database pooling, we can define the minimum and maximum limit of database connection
+3. Normally, without using database pooling, each request will create a database connection. This approach is inneficient as it will exhaust the system memory exponentially with the number of requests
